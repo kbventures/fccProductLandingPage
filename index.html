@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Code Camp Product Landing Page Challenge</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
     <header id="header">
       <div class="header-group">
         <img src="/images/black-and-white-peeler.svg" alt="" id="header-img" />
-        <h1 id="title">W i l l i W a l l er</h1>
+        <h1 id="title">Willi Waller</h1>
       </div>
       <nav id="nav-bar">
         <!-- User Story #5: When I click a .nav-link button in the nav
@@ -23,7 +24,7 @@
         </ul>
       </nav>
     </header>
-    <main id="main-o">
+    <main id="main-container">
       <iframe
         id="video"
         width="360"
@@ -37,15 +38,22 @@
       </form>
       <div id="features-group">
         <ul>
-          <li>Premium Materials</li>
-          <li>Fast Shipping</li>
-          <li>Quality Assurance</li>
+          <li class="feature">
+            Made With Premium Materials From Engerered Species
+          </li>
+          <li class="feature">Fast Shipping</li>
+          <li class="feature">Uncle Tom's Personal Guarantee You can trust</li>
         </ul>
       </div>
       <div id="pricing-group">
         <div class="pricing-card">
-          <h3>White Peeler</h3>
-          <p><strong>Price</strong></p>
+          <h3 class="background-white">White Peeler</h3>
+          <img
+            src="/images/black-and-white-peeler.svg"
+            alt=""
+            id="header-img"
+          />
+          <p><strong>200$</strong></p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
             autem iste vitae nesciunt aliquid iusto!
@@ -53,8 +61,9 @@
           <button>Select</button>
         </div>
         <div class="pricing-card">
-          <h3>White Peeler</h3>
-          <p><strong>Price</strong></p>
+          <h3 class="background-red">Red Peeler</h3>
+          <img src="/images/red-peeler.svg" alt="" id="header-img" />
+          <p><strong>1000$</strong></p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
             autem iste vitae nesciunt aliquid iusto!
@@ -62,8 +71,9 @@
           <button>Select</button>
         </div>
         <div class="pricing-card">
-          <h3>White Peeler</h3>
-          <p><strong>Price</strong></p>
+          <h3 class="background-brown">Brown Peeler</h3>
+          <img src="/images/brown-peeler.svg" alt="" id="header-img" />
+          <p><strong>4000$</strong></p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
             autem iste vitae nesciunt aliquid iusto!
@@ -71,6 +81,7 @@
           <button>Select</button>
         </div>
       </div>
+      <hr />
       <footer id="footer">
         <div id="footer-group">
           <ul>
@@ -78,8 +89,8 @@
             <li>Terms</li>
             <li>Contact</li>
           </ul>
+          <p class="text-center">Copyright 2016 Willi Waller</p>
         </div>
-        <p>Copyright 2016, Willi Waller</p>
       </footer>
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </main>

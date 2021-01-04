@@ -12,6 +12,7 @@ https://chir.ag/projects/name-that-color/#E27D69
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Roboto&display=swap');
 
 :root {
+  --color-white: #f3f3f3;
   --color-brown: #9d5c4a;
   --color-dark-violet: #2a2535;
   --color-green-brown: #a8a659;
@@ -25,6 +26,8 @@ https://chir.ag/projects/name-that-color/#E27D69
 }
 
 body {
+  overflow-x: hidden;
+  outline-color: 1rem var(--color-orange);
   background-color: var(--color-grey);
   color: var(--color--dark-violet);
 }
@@ -59,8 +62,117 @@ body {
   display: flex;
 }
 
+#main-container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+#pricing-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+
+justify-content — controls alignment of all items on the main axis.
+align-items — controls alignment of all items on the cross axis.
+align-self — controls alignment of an individual flex item on the cross axis.
+align-content — described in the spec as for “packing flex lines”; controls space between flex lines on the cross axis.
+
+*/
+
+.pricing-card {
+  border: 1px black solid;
+  box-shadow: 2px 2px 3px 1px var(--color-dark-violet);
+  text-align: center;
+  margin: 1rem 1.5rem;
+}
+
+.pricing-card h3 {
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-card p strong,
+.pricing-card button {
+  font-size: 1.5rem;
+}
+
+.pricing-card p strong {
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
+.pricing-card p {
+  font-size: 1.3rem;
+  padding: 0 1.5rem;
+}
+
+.pricing-card img,
+.pricing-card p,
+.pricing-card button {
+  margin: 0.9rem 0;
+}
+
+.pricing-card button {
+  padding: 0 5rem;
+  border-radius: 1rem;
+}
+
+.pricing-card button:hover {
+  border: 0.2rem solid var(--color-light-green);
+  border-radius: 1rem;
+}
+
+/* Footer Section */
+#footer {
+  margin-top: 1rem;
+}
+
+#footer p {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#footer-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
 #footer-group ul {
   display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+hr {
+  margin: 1rem 1.5rem;
+}
+
+/* Reusable */
+
+.background-red {
+  background-color: var(--color-dark-red);
+}
+
+.background-brown {
+  background-color: var(--color-brown);
+}
+
+.background-white {
+  background-color: var(--color-white);
+}
+
+.pricing-card button {
+  background-color: var(--color-orange);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*
