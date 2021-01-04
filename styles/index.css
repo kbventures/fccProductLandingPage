@@ -1,0 +1,75 @@
+/* 
+
+Color Scheme::after
+https://visme.co/blog/website-color-schemes/
+
+Name extractor: 
+https://chir.ag/projects/name-that-color/#E27D69
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Roboto&display=swap');
+
+:root {
+  --color-brown: #9d5c4a;
+  --color-dark-violet: #2a2535;
+  --color-green-brown: #a8a659;
+  --color-dark-green: #454a27;
+  --color-light-green: #22ab92;
+  --color-orange: #ec8941;
+  --color-red: #f80338;
+  --color-violet: #322673;
+  --color-grey: #d9d4d0;
+  --color-dark-red: #c32325;
+}
+
+body {
+  background-color: var(--color-grey);
+  color: var(--color--dark-violet);
+}
+
+#title {
+  font-size: 1.9rem;
+  font-family: 'Bangers', cursive;
+}
+
+#header-img {
+  width: 3rem;
+}
+
+#header {
+  width: 100%;
+  background-color: var(--color-green-green);
+  border: 0.1rem solid var(--color-violet);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem var(--color-dark-violet);
+}
+
+.header-group {
+  display: flex;
+}
+
+#nav-bar ul {
+  display: flex;
+}
+
+#features-group ul {
+  display: flex;
+}
+
+#footer-group ul {
+  display: flex;
+}
+
+/*
+
+font-family: 'Bangers', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+
+
+*/
