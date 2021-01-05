@@ -14,7 +14,7 @@
   <body>
     <header id="header">
       <div class="header-group">
-        <img src="/images/black-and-white-peeler.svg" alt="" id="header-img" />
+        <!-- <img src="/images/black-and-white-peeler.svg" alt="" id="header-img" /> -->
         <h1 id="title">Willi Waller</h1>
       </div>
       <nav id="nav-bar">
@@ -22,32 +22,34 @@
              element, I am taken to the corresponding section of the landing
               page.-->
         <ul>
-          <li><a href="" class="nav-link"></a>Features</li>
-          <li><a href="" class="nav-link"></a>How it works</li>
-          <li><a href="" class="nav-link"></a>Pricing</li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#video" class="nav-link">How it works</a></li>
+          <li><a href="#pricing-group" class="nav-link">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main id="main-container">
-      <iframe
-        id="video"
-        width="360"
-        src="https://www.youtube.com/embed/NSfBpXOzmd0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input type="email" name="email" id="email" placeholder="email..." />
-        <input type="submit" value="Submit" id="submit" />
-      </form>
+      <div id="email-list">
+        <h3>Germain Engineered, Cutting Edge Technlogy.</h3>
+        <p>Join our emailing list for news and promotions!</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address..."
+          />
+          <input type="submit" value="Submit" class="submit-list" id="submit" />
+        </form>
+      </div>
       <div id="features-group">
-        <div class="feature">
+        <div class="feature" id="features">
           <i class="fas fa-angle-double-right fa-2x"></i>
           <div class="feature-content">
             <h3>Made With Premium Materials</h3>
             <p>
-              Nearly Extinct Rhinoceros horn From Zambia Africa Bought Directly
-              From Local Shaman Named Zulu
+              Nearly Extinct Rhinoceros Forn From Zambia Africa Bought Directly
+              From Local Shaman Named Zili
             </p>
           </div>
         </div>
@@ -66,10 +68,19 @@
           <div class="feature-content">
             <h3>Uncle Tom's Personal Guarantee</h3>
             <p>
-              Uncle Tom's Family Have Been In The Peeler Business Since 1689
+              Uncle Tom's Family Have Been In The Peeler Business Since 1689 BC &#8482
             </p>
           </div>
         </div>
+      </div>
+      <div id="video-container">
+        <iframe
+          id="video"
+          width="360"
+          src="https://www.youtube.com/embed/NSfBpXOzmd0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
       <div id="pricing-group">
         <div class="pricing-card">
@@ -77,7 +88,7 @@
           <img
             src="/images/black-and-white-peeler.svg"
             alt=""
-            id="header-img"
+            class="header-img"
           />
           <p><strong>200$</strong></p>
           <p>
@@ -88,7 +99,7 @@
         </div>
         <div class="pricing-card">
           <h3 class="background-red">Red Peeler</h3>
-          <img src="/images/red-peeler.svg" alt="" id="header-img" />
+          <img src="/images/red-peeler.svg" alt="" class="header-img" />
           <p><strong>1000$</strong></p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
@@ -98,7 +109,7 @@
         </div>
         <div class="pricing-card">
           <h3 class="background-brown">Brown Peeler</h3>
-          <img src="/images/brown-peeler.svg" alt="" id="header-img" />
+          <img src="/images/brown-peeler.svg" alt="" class="header-img" />
           <p><strong>4000$</strong></p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,

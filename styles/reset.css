@@ -42,7 +42,12 @@ img {
   height: auto;
 }
 
-button {
+a {
+  text-decoration: none;
+}
+
+/* button,
+input {
   border: none;
   outline: none;
-}
+} */

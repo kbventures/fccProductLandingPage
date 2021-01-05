@@ -32,11 +32,20 @@ body {
   color: var(--color--dark-violet);
 }
 
+#main-container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
 /* Header & Navigation Styling */
 
 #title {
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   font-family: 'Bangers', cursive;
+}
+
+#header li {
+  font-size: 1.1rem;
 }
 
 #header-img {
@@ -44,45 +53,66 @@ body {
 }
 
 #header {
+  background-color: var(--color-orange);
+  padding: 0.5rem 0rem;
+  text-align: center;
   width: 100%;
-  background-color: var(--color-green-green);
+  /* background-color: var(--color-green-green); */
   border: 0.1rem solid var(--color-violet);
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem var(--color-dark-violet);
 }
 
 .header-group {
-  display: flex;
+  /* display: flex; */
+  justify-content: center;
+}
+#nav-bar a,
+#nav-bar a:visited {
+  color: var(--color-dark-violet);
 }
 
-/* #nav-bar ul {
-  display: flex;
-} */
+/* Email list section */
+
+#email-list {
+  margin: 7rem 0rem 2rem 0rem;
+  text-align: center;
+}
+
+#email-list h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+}
+#email-list p {
+  margin: 5rem 0rem 2rem 0rem;
+  padding: 0rem 1rem;
+  font-style: italic;
+}
+#email-list input {
+  margin-top: 1rem;
+}
+
+#email-list .submit-list {
+  padding: 0 5rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  background-color: var(--color-orange);
+}
+
+#email-list input:hover {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Feature */
 
 #features-group ul {
   display: flex;
 }
-
-#main-container {
-  max-width: 56rem;
-  margin: 0 auto;
-}
-#pricing-group {
-  display: flex;
-  flex-direction: column;
-}
-
-/* 
-
-justify-content — controls alignment of all items on the main axis.
-align-items — controls alignment of all items on the cross axis.
-align-self — controls alignment of an individual flex item on the cross axis.
-align-content — described in the spec as for “packing flex lines”; controls space between flex lines on the cross axis.
-
-*/
-
-/* Feature */
 
 #feature-group {
   display: flex;
@@ -107,7 +137,22 @@ align-content — described in the spec as for “packing flex lines”; control
   font-style: italic;
 }
 
+/* Video-Container */
+
+#video-container {
+  margin: 2rem 0rem;
+}
+
 /* Pricing Card Styling */
+
+#pricing-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card .header-img {
+  width: 3rem;
+}
 
 .pricing-card {
   border: 1px black solid;
@@ -117,15 +162,14 @@ align-content — described in the spec as for “packing flex lines”; control
 }
 
 .pricing-card h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 0.5rem 0;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
 
-.pricing-card p strong,
-.pricing-card button {
-  font-size: 1.5rem;
+.pricing-card p strong {
+  font-size: 1.4rem;
 }
 
 .pricing-card p strong {
@@ -134,8 +178,8 @@ align-content — described in the spec as for “packing flex lines”; control
 }
 
 .pricing-card p {
-  font-size: 1.3rem;
-  padding: 0 1.5rem;
+  font-size: 1.2rem;
+  padding: 0 1.3rem;
 }
 
 .pricing-card img,
@@ -147,15 +191,18 @@ align-content — described in the spec as for “packing flex lines”; control
 .pricing-card button {
   padding: 0 5rem;
   border-radius: 1rem;
+  font-size: 1.3rem;
 }
 
 .pricing-card button:hover {
-  border: 0.2rem solid var(--color-light-green);
-  border-radius: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /* Footer Section */
 #footer {
+  background-color: var(--color-orange);
   margin-top: 1rem;
 }
 
@@ -167,19 +214,19 @@ align-content — described in the spec as for “packing flex lines”; control
 #footer-group {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0;
-  margin-bottom: 1rem;
+  padding: 1rem 0rem;
 }
 
 #footer-group ul {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 hr {
-  margin: 1rem 1.5rem;
+  margin: 1rem 1.5rem 1.6rem 1.5rem;
 }
 
 /* Reusable */
@@ -203,26 +250,6 @@ hr {
 .text-center {
   text-align: center;
 }
-
-/*
-
-font-family: 'Bangers', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
-
-
-*/
-
-/* 
-Stubs, will be changed once medie queries set
-for screen over than iphone 5
-*/
-
-/* #nav-bar {
-  display: none;
-} */
 
 #features-group i {
   display: none;
