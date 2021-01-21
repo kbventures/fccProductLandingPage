@@ -7,6 +7,15 @@ Name extractor:
 https://chir.ag/projects/name-that-color/#E27D69
 
 
+how ot make your text responssive
+https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+
+Todo:
+Clamp to make text responssive. See link above.
+Make video iframe responssive.
+make a flex grid to add icons to features.
+Ask for feedback.
+Test using w3 link tester.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Roboto&display=swap');
@@ -115,7 +124,7 @@ body {
 #email-list form {
   display: flex;
   flex-direction: column;
-
+  margin: 0 auto;
   max-width: 360px;
   padding: 1rem 0;
 }
@@ -140,16 +149,15 @@ body {
 
 #feature-group {
   display: flex;
-  /* flex-direction: row; */
-  /* height: 100vh; */
-  flex-wrap: nowrap;
-  align-content: center;
+  align-content: space-between;
+  margin: 2rem 0rem;
 }
 
 .feature {
   display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -164,11 +172,15 @@ body {
   font-style: italic;
 }
 
-/* Video-Container */
-
-#video-container {
-  margin: 2rem 0rem;
-}
+/* Video-Container - Dimensions 356 : 150*/
+/* 
+.video-container p {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+} */
 
 /* Pricing Card Styling */
 
@@ -245,6 +257,7 @@ body {
 #footer-group {
   display: flex;
   flex-direction: column;
+
   padding: 1rem 0rem;
 }
 
